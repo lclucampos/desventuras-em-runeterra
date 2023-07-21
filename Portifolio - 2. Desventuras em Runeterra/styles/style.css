@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=Lumanosimo&family=Martel:wght@600&family=Old+Standard+TT:ital@1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-background: #000000;
+    --cor-texto: #CEE6F3;
+    --cor-bg-botao: #3C2A21;
+    --cor-texto-hover: #000;
+    --cor-borda: #BA704F;
+    --cor-bg-hover: #DFA878;
+    --cor-dialogo-dionisio: #ff5900;
+    --cor-rodape: #643A6B;
+
+    --fonte-titulo: 'Lumanosimo', cursive;
+    --fonte-narrador: 'Old Standard TT', serif;
+    --fonte-aventureiros: 'Martel', serif;
+    --fonte-tripulacao: 'IBM Plex Mono', monospace;
+
+
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-background);
+    color: var(--cor-texto);
+    position: relative;
+    min-height: 100vh;
+}
+
+
+/* CABEÇALHO DO PROJETO */
+.cabecalho{
+    padding: 1% 15% 1% 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cabecalho__menu__link{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-size: 1,7rem;
+    font-weight: 700;
+    border: 3px solid var(--cor-borda);
+    border-radius: 5px;
+    padding: 1% 1% 1% 1%;
+    background-color: var(--cor-bg-botao);
+    align-items: center;
+}
+.cabecalho__menu__link:hover{
+    color: var(--cor-texto-hover);
+    background-color: var(--cor-bg-hover);
+    border-color: var(--cor-background);
+}
+
+/* TITULO CABECALHO */
+
+.titulo{
+    gap: 2px;
+    border: 1px solid var(--cor-rodape);
+    border-radius: 1%;
+    background-color: var(--cor-rodape);
+    padding: 1% 1% 1% 1%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.cabecalho__titulo{
+    color: var(--cor-texto);
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+}
+.cabecalho__subtitulo{
+    color: var(--cor-texto);
+    justify-content: center;
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 0.7rem;
+    display: flex;
+}
+
+/* CORPO DO PROJETO */
+.corpo{
+  padding: 1% 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Dialogos e narração */
+
+.narrador{
+    border: 1px solid var(--cor-borda);
+    padding: 2%;
+}
+.aventureiros{
+    border: 1px solid var(--cor-dialogo-dionisio);
+    padding: 2%;
+}
+.tripulacao{
+    border: 1px solid var(--cor-texto);
+    padding: 2%;
+}
+.dialogo__narracao{
+    padding: 1%;
+    color: var(--cor-texto);
+    text-align: justify;
+    font-family: var(--fonte-narrador);
+    font-size: 1.2rem;
+}
+
+.dialogo__dionisio{
+    color: var(--cor-dialogo-dionisio);
+    text-align: justify;
+    font-family: var(--fonte-aventureiros);
+    font-size: 1.2rem;
+}
+
+.dialogo__tripulacao{
+    color: var(--cor-texto);
+    text-align: justify;
+    font-family: var(--fonte-tripulacao);
+    font-size: 1.2rem;
+}
+
+/* RODAPE */
+.rodape{
+    color: var(--cor-texto);
+    background-color: var(--cor-rodape);
+    padding: 10px;
+    text-align: center;
+    font-family: var(--fonte-aventureiros);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
